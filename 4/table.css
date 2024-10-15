@@ -1,0 +1,88 @@
+.table-mackbook {
+    
+    border-collapse: collapse;
+}
+
+.tbl-el {
+    text-align: center;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #435b71;
+    margin: 20px;
+}
+
+.table-mackbook {
+    width: 900px;
+    border-collapse: collapse;
+    margin: 20px auto 0;
+    background-color: #fff;
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.9);
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+    overflow: hidden;
+}
+
+.tbl-mac-cap {
+    display: table-caption;
+    font-size: 24px;
+    margin-top: 10px;
+    padding: 10px;
+    font-weight: bold;
+    color: #333;
+    background-color: #fff;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+}
+
+.tbl-mac-cap svg {
+    position: relative;
+    vertical-align: middle;
+    float: left;
+    margin-top: 7px;
+}
+
+
+.table-line {
+    transition: background-color 0.3s;
+}
+
+.table-line:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.table-line:hover {
+    background-color: #e9f5ff;
+}
+
+.tbl-el {
+    padding: 12px 15px;
+    text-align: center;
+}
+
+.tbl-a a {
+    display: block;
+    color: #007BFF;
+    text-decoration: none;
+    transition: color 0.3s;
+    padding: 12px 15px;
+}
+
+.tbl-a:hover {
+    color: #0056b3;
+    background-color: rgba(176, 196, 222, 0.4);
+    transition: all 0.9s;
+}
+
+.tbl-price, .tbl-size, .tbl-cpu, .tbl-ram, .tbl-color, .tbl-layout {
+    color: #555;
+}
+
+.tbl-price {
+    font-weight: bold;
+}
+
+.green-light {
+    background-color: rgba(144, 238, 144, 0.3);
+}
