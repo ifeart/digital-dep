@@ -6,6 +6,7 @@
     <title>Таблица цен на Mackbook</title>
     <link rel="stylesheet" href="../style/style.css">
     <link rel="stylesheet" href="table.css">
+    <link rel="icon" href="../favicon-apple.svg">
 </head>
 <body>
     <div class="header">
@@ -27,8 +28,8 @@
             </li>
         </ul>
     </div>
-    <div>
-        <table class="table-mackbook">
+    <div class="table-page-content">
+        <table class="table-mackbook" id="table-mackbook">
             <caption class="tbl-mac-cap">
                 <svg xmlns="http://www.w3.org/2000/svg" width="54" height="14" viewBox="0 0 54 14">
                     <g fill="none" fill-rule="evenodd" transform="translate(1 1)">
@@ -37,74 +38,122 @@
                         <circle cx="46" cy="6" r="6" fill="#27C93F" stroke="#1AAB29" stroke-width=".5"></circle>
                     </g>
                 </svg>
-                <span>Таблица сравненния цен</span>
+                <span>Таблица сравненния цен на macbook air</span>
             </caption>
-            <tr class="table-line">
-                <th class="tbl-el">Магазин (со ссылкой)</th>
-                <th class="tbl-el">Цена</th>
-                <th class="tbl-el">Размер</th>
-                <th class="tbl-el">Процессор</th>
-                <th class="tbl-el">Память</th>
-                <th class="tbl-el">Цвет</th>
-                <th class="tbl-el">Раскладка</th>
-            </tr>
-            <tr class="table-line">
-                <td class="tbl-el tbl-a">
-                    <a target="_blank" href="https://biggeek.ru/products/apple-macbook-air-13-mxcu3-starlight-m3-8-core-gpu-10-core-16-gb-512-gb" >BigGeek</a>
-                </td>
-                <td class="tbl-el tbl-price">169 990</td>
-                <td class="tbl-el tbl-size">13</td>
-                <td class="tbl-el tbl-cpu">M3</td>
-                <td class="tbl-el tbl-ram">16/512</td>
-                <td class="tbl-el tbl-color">Space Gray/Silver</td>
-                <td class="tbl-el tbl-layout">en/ru</td>
-            </tr>
-            <tr class="table-line">
-                <td class="tbl-el tbl-a">
-                    <a target="_blank" href="https://biggeek.ru/products/apple-macbook-air-15-mxd13-space-gray-m3-8-core-gpu-10-core-16-gb-512-gb">BigGeek</a>
-                </td>
-                <td class="tbl-el tbl-price">171 990</td>
-                <td class="tbl-el tbl-size">15</td>
-                <td class="tbl-el tbl-cpu">M3</td>
-                <td class="tbl-el tbl-ram">16/512</td>
-                <td class="tbl-el tbl-color">Space Gray/Silver</td>
-                <td class="tbl-el tbl-layout">en/ru</td>
-            </tr>
-            <tr class="table-line">
-                <td class="tbl-el tbl-a">
-                    <a target="_blank" href="https://www.wildberries.ru/catalog/235964735/detail.aspx">WB retail</a>
-                </td>
-                <td class="tbl-el tbl-price">151 353</td>
-                <td class="tbl-el tbl-size">13</td>
-                <td class="tbl-el tbl-cpu">M3</td>
-                <td class="tbl-el tbl-ram">16/512</td>
-                <td class="tbl-el tbl-color">Space Gray</td>
-                <td class="tbl-el tbl-layout">en</td>
-            </tr>
-            <tr class="table-line">
-                <td class="tbl-el tbl-a">
-                    <a target="_blank" href="https://www.wildberries.ru/catalog/232867090/detail.aspx?targetUrl=SG">WB retail</a>
-                </td>
-                <td class="tbl-el tbl-price">165 543</td>
-                <td class="tbl-el tbl-size">15</td>
-                <td class="tbl-el tbl-cpu">M3</td>
-                <td class="tbl-el tbl-ram">16/512</td>
-                <td class="tbl-el tbl-color">Space Gray</td>
-                <td class="tbl-el tbl-layout">en</td>
-            </tr>
-            <tr class="table-line">
-                <td class="tbl-el tbl-a">
-                    <a target="_blank" href="https://biggeek.ru/products/apple-macbook-air-13-retina-mgn93-silver-m1-8gb-256gb">BigGeek</a>
-                </td>
-                <td class="tbl-el tbl-price">75 990</td>
-                <td class="tbl-el tbl-size">13</td>
-                <td class="tbl-el tbl-cpu">M1</td>
-                <td class="tbl-el tbl-ram">8/256</td>
-                <td class="tbl-el tbl-color">Space Gray/Silver</td>
-                <td class="tbl-el tbl-layout">en/ru</td>
-            </tr>
+            <tbody id="table-mac-body">
+                <tr class="table-line">
+                    <th class="tbl-el">Магазин (со ссылкой)</th>
+                    <th class="tbl-el">Цена</th>
+                    <th class="tbl-el">Размер</th>
+                    <th class="tbl-el">Процессор</th>
+                    <th class="tbl-el">Память</th>
+                    <th class="tbl-el">Цвет</th>
+                    <th class="tbl-el">Раскладка</th>
+                </tr>
+                <tr class="table-line">
+                    <td class="tbl-el tbl-a">
+                        <a target="_blank" href="https://biggeek.ru/products/apple-macbook-air-13-mxcu3-starlight-m3-8-core-gpu-10-core-16-gb-512-gb" >BigGeek</a>
+                    </td>
+                    <td class="tbl-el tbl-price">169990</td>
+                    <td class="tbl-el tbl-size">13</td>
+                    <td class="tbl-el tbl-cpu">M3</td>
+                    <td class="tbl-el tbl-ram">16/512</td>
+                    <td class="tbl-el tbl-color">Space Gray/Silver</td>
+                    <td class="tbl-el tbl-layout">en/ru</td>
+                </tr>
+                <tr class="table-line">
+                    <td class="tbl-el tbl-a">
+                        <a target="_blank" href="https://biggeek.ru/products/apple-macbook-air-15-mxd13-space-gray-m3-8-core-gpu-10-core-16-gb-512-gb">BigGeek</a>
+                    </td>
+                    <td class="tbl-el tbl-price">171990</td>
+                    <td class="tbl-el tbl-size">15</td>
+                    <td class="tbl-el tbl-cpu">M3</td>
+                    <td class="tbl-el tbl-ram">16/512</td>
+                    <td class="tbl-el tbl-color">Space Gray/Silver</td>
+                    <td class="tbl-el tbl-layout">en/ru</td>
+                </tr>
+                <tr class="table-line">
+                    <td class="tbl-el tbl-a">
+                        <a target="_blank" href="https://www.wildberries.ru/catalog/235964735/detail.aspx">WB retail</a>
+                    </td>
+                    <td class="tbl-el tbl-price">151353</td>
+                    <td class="tbl-el tbl-size">13</td>
+                    <td class="tbl-el tbl-cpu">M3</td>
+                    <td class="tbl-el tbl-ram">16/512</td>
+                    <td class="tbl-el tbl-color">Space Gray</td>
+                    <td class="tbl-el tbl-layout">en</td>
+                </tr>
+                <tr class="table-line">
+                    <td class="tbl-el tbl-a">
+                        <a target="_blank" href="https://www.wildberries.ru/catalog/232867090/detail.aspx?targetUrl=SG">WB retail</a>
+                    </td>
+                    <td class="tbl-el tbl-price">165543</td>
+                    <td class="tbl-el tbl-size">15</td>
+                    <td class="tbl-el tbl-cpu">M3</td>
+                    <td class="tbl-el tbl-ram">16/512</td>
+                    <td class="tbl-el tbl-color">Space Gray</td>
+                    <td class="tbl-el tbl-layout">en</td>
+                </tr>
+                <tr class="table-line">
+                    <td class="tbl-el tbl-a">
+                        <a target="_blank" href="https://biggeek.ru/products/apple-macbook-air-13-retina-mgn93-silver-m1-8gb-256gb">BigGeek</a>
+                    </td>
+                    <td class="tbl-el tbl-price">75990</td>
+                    <td class="tbl-el tbl-size">13</td>
+                    <td class="tbl-el tbl-cpu">M1</td>
+                    <td class="tbl-el tbl-ram">8/256</td>
+                    <td class="tbl-el tbl-color">Space Gray/Silver</td>
+                    <td class="tbl-el tbl-layout">en/ru</td>
+                </tr>
+            </tbody>
         </table>
-    </div>    
+        <div class="div-add-mac">
+            
+            <label class="lbl-add-mac tbl-mac-cap" for="form-add-mac">
+                <svg xmlns="http://www.w3.org/2000/svg" width="54" height="14" viewBox="0 0 54 14">
+                    <g fill="none" fill-rule="evenodd" transform="translate(1 1)">
+                        <circle cx="6" cy="6" r="6" fill="#FF5F56" stroke="#E0443E" stroke-width=".5"></circle>
+                        <circle cx="26" cy="6" r="6" fill="#FFBD2E" stroke="#DEA123" stroke-width=".5"></circle>
+                        <circle cx="46" cy="6" r="6" fill="#27C93F" stroke="#1AAB29" stroke-width=".5"></circle>
+                    </g>
+                </svg>
+                Добавить доступный вариант</label>
+            <form class="form-add-mac" id="form-add-mac" action="">
+                <input class="inpt-amc" required type="url" placeholder="Введите ссылку на магазин">
+                <input class="inpt-amc" required type="text" placeholder="Введите название магазина">
+                <input class="inpt-amc" required type="text" pattern="[0-9]*" placeholder="Введите цену">
+                <select class="inpt-amc select-amc" required name="select-size" id="select-size">
+                    <option selected disabled value="">Выберите размер</option>
+                    <option value="13">13</option>
+                    <option value="15">15</option>
+                </select>
+                <!-- <input type="text" placeholder="Введите размер"> -->
+                <!-- <input type="text" placeholder="Введите модель процессора"> -->
+                <select class="inpt-amc select-amc" required name="select-cpu" id="select-cpu">
+                    <option selected disabled value="">Выберите процессор</option>
+                    <option value="M1">M1</option>
+                    <option value="M2">M2</option>
+                    <option value="M3">M3</option>
+                </select>
+                <input class="inpt-amc" type="text" placeholder="Введите объем памяти">
+                <!-- <input type="text" placeholder="Введите доступный цвет"> -->
+                <select class="inpt-amc select-amc" required name="select-color" id="select-color">
+                    <option selected disabled value="">Введите доступный цвет</option>
+                    <option value="Space Gray/Silver">Space Gray/Silver</option>
+                    <option value="Space Gray">Space Gray</option>
+                    <option value="Silver">Silver</option>
+                </select>
+                <!-- <input type="text" placeholder="Введите доступную раскладку"> -->
+                <select class="inpt-amc select-amc" required name="select-layuot" id="select-layuot">
+                    <option selected disabled value="">Введите доступную раскладку</option>
+                    <option value="en/ru">en/ru</option>
+                    <option value="en">en</option>
+                    <option value="ru">ru</option>
+                </select>
+                <input class="submit-btn-add-mac" type="submit" value="Добавить вариант">
+            </form>
+        </div>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>

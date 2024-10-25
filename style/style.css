@@ -169,7 +169,7 @@ li::marker {
   border-radius: 20px;
 }
 
-svg:hover {
+.svg-about:hover {
   background-color: white;
   border-radius: 50%;
   transition: all 0.4s ease;
@@ -261,6 +261,7 @@ svg:hover {
   border-color: blue;
   top: 40px;
   left: 160px;
+  z-index: 1;
 }
 
 .green-block {

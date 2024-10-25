@@ -1,0 +1,47 @@
+body {
+
+}
+
+
+.main-div{
+    margin-left: auto;
+    margin-right: auto;
+    width: fit-content; 
+}
+
+.carousel {
+    max-width: 600px;
+    max-height: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.carousel-item {
+    max-height: 360px;
+}
+
+.width-img {
+    width: 110% !important;
+}
+
+.cards-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 40px;
+    justify-content: center;
+}
+
+.card {
+    /* border: gold solid 2px; */
+}
+
+.card-img-top {
+}
+
+.card-body {
+
+}

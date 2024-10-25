@@ -3,20 +3,27 @@
     border-collapse: collapse;
 }
 
-.tbl-el {
-    text-align: center;
-}
-
 body {
     font-family: Arial, sans-serif;
     background-color: #435b71;
     margin: 20px;
 }
 
+.table-page-content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
 .table-mackbook {
     width: 900px;
     border-collapse: collapse;
-    margin: 20px auto 0;
+    margin: 0;
     background-color: #fff;
     box-shadow: 0 5px 8px rgba(0, 0, 0, 0.9);
     border-bottom-left-radius: 8px;
@@ -27,7 +34,6 @@ body {
 .tbl-mac-cap {
     display: table-caption;
     font-size: 24px;
-    margin-top: 10px;
     padding: 10px;
     font-weight: bold;
     color: #333;
@@ -43,7 +49,6 @@ body {
     margin-top: 7px;
 }
 
-
 .table-line {
     transition: background-color 0.3s;
 }
@@ -57,7 +62,6 @@ body {
 }
 
 .tbl-el {
-    padding: 12px 15px;
     text-align: center;
 }
 
@@ -66,7 +70,7 @@ body {
     color: #007BFF;
     text-decoration: none;
     transition: color 0.3s;
-    padding: 12px 15px;
+    padding: 24px 30px;
 }
 
 .tbl-a:hover {
@@ -75,8 +79,9 @@ body {
     transition: all 0.9s;
 }
 
-.tbl-price, .tbl-size, .tbl-cpu, .tbl-ram, .tbl-color, .tbl-layout {
+.tbl-el:not(.tbl-a) {
     color: #555;
+    padding: 12px 15px;
 }
 
 .tbl-price {
@@ -85,4 +90,81 @@ body {
 
 .green-light {
     background-color: rgba(144, 238, 144, 0.3);
+}
+
+.blue-light {
+    background-color: #c3e1fa;
+    transition: all 0.5s;
+}
+
+.bold-text {
+    font-weight: bold;
+    color: black;
+}
+
+.div-add-mac {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    width: 470px;
+    border-radius: 8px;
+    box-shadow: 0 5px 8px rgba(0, 0, 0, 0.9);   
+}
+
+.lbl-add-mac {
+    margin: 0;
+    text-align: center;
+}
+
+.form-add-mac {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    width: 420px;
+    margin-left: auto;
+    margin-right: auto;
+    gap: 15px;
+}
+
+.inpt-amc, .submit-btn-add-mac {
+    padding: 10px;
+    text-align: start;
+    border-radius: 5px;
+    border: #808080 1px solid;
+}
+
+.inpt-amc:not(.select-amc) {
+    padding-left: 14px;
+}
+
+.select-amc {
+    user-select: none;
+}
+
+.select-amc:required:invalid {
+    color: #808080;
+}
+
+.select-amc option[disabled] {
+    display: none;
+}
+
+.select-amc option {
+    background-color: white;
+}
+
+.inpt-amc:hover {
+    background-color: #e9f5ff;
+    transition: 0.3s;
+}
+
+.submit-btn-add-mac {
+    cursor: pointer;
+    text-align: center;
+    background-color: #e9f5ff;
+}
+
+.submit-btn-add-mac:hover {
+    background-color: rgba(176, 196, 222, 0.4);
+    transition: all 0.9s;
 }
