@@ -4,9 +4,35 @@ body {
 
 
 .main-div{
+    width: fit-content;
     margin-left: auto;
     margin-right: auto;
-    width: fit-content; 
+}
+
+.main-heading {
+    text-align: center;
+    margin-top: 8px;
+}
+
+#navbar-sticky {
+    position: sticky;
+    top: 20px;
+    background-color: #efe8e8; /* Замените на цвет фона вашего объекта */
+    z-index: 1;
+    border-radius: 10px;
+}
+
+.items {
+    padding: 20px;
+}
+
+.border-end {
+    border: var(--bs-border-width) var(--bs-border-style) var(--bs-border-color)!important;
+    border-left: none !important;
+    border-radius: 25px;
+    border-top-left-radius: 0;
+    border-bottom-left-radius: 0;
+    padding-top: 25px;
 }
 
 .carousel {
@@ -26,22 +52,147 @@ body {
 
 .cards-wrap {
     display: flex;
-    flex-wrap: wrap;
     flex-direction: row;
+    flex-wrap: wrap;
     gap: 20px;
     margin-left: auto;
     margin-right: auto;
-    padding: 40px;
+    padding: 0 40px;
     justify-content: center;
+}
+
+h4 {
+    margin-bottom: 32px;
+}
+
+.row {
+    margin-right: 0;
+    display: flex;
+    flex-wrap: nowrap;
+    --bs-gutter-x: 0;
+}
+
+.row-films {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    gap: 40px;
+    padding: 30px;
+}
+
+.main-inf-div-1 {
+    max-width: fit-content;
 }
 
 .card {
     /* border: gold solid 2px; */
+    width: 20rem;
 }
 
 .card-img-top {
+
 }
 
 .card-body {
 
+}
+
+.info-card {
+}
+
+.card-body .btn-primary {
+    background-color: gold;
+    border-color: black;
+    color: black;
+}
+
+.card-body .btn-primary:hover {
+    background-color: goldenrod;
+}
+.marg-cntr {
+    margin-left: 5%;
+    margin-right: 5%;
+}
+
+.col-4 {
+    width: 250px;
+    padding: 10px 15px;
+}
+
+.col-8 {
+}
+
+.m-inf-img img {
+    width: 250px;
+    border-radius: 5px;
+}
+
+.m-inf-el.heading {
+    list-style-type: none;
+    padding: 10px;
+    padding-left: 0;
+}
+
+.m-inf-el.heading h2 {
+    margin-bottom: 0;
+}
+.main-info-list {
+    /* padding-left: 0; */
+}
+
+.m-inf-el:not(.heading) {
+
+}
+
+.m-inf-el::marker {
+    padding-left: 20px;
+}
+
+.h2-info-films {
+    text-align: start;
+    padding-left: 15%;
+    margin-top: 30px
+}
+
+.col-border {
+    border: 1px solid black;
+    padding: 10px;
+}
+
+.col-np {
+    padding: 0;
+    border: none;
+}
+
+.second-list-inf-f {
+    list-style-type: circle;
+}
+
+.row-table-films-list {
+    padding-left: 15px;
+    list-style-type: disc;
+    
+}
+
+.r-tbl-fi-li-el {
+    text-align: left;
+}
+
+.container {
+    padding-left: 0;
+    padding-right: 0;
+    border: 1px solid black;
+}
+
+.table {
+    max-width: fit-content;
+}
+
+.table>:not(caption)>*>* {
+    background-color: transparent;
+}
+
+.table-line:hover {
+    background-color: lightgoldenrodyellow;
 }

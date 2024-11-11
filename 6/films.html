@@ -8,10 +8,429 @@
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
         crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="icons8-film-96.png" type="image/x-icon">
 </head>
 <body>
-    <div class="alert alert-primary main-div" role="alert">
-        К сожалению данная страница на данный момент находится в разработке
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="main.html">Главная</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="info.html">Основная информация</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="films.html">Список фильмов</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" aria-disabled="true"></a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="row-films">
+        <div class="main-inf-div main-inf-div-1">
+            <ul class="main-info-list">
+                <li class="m-inf-el heading">
+                    <h2>Леонардо ДиКаприо</h2>            
+                </li>
+                <li class="m-inf-el">
+                    11 ноября 1974 (49 лет)
+                </li>
+                <li class="m-inf-el">
+                    снялся в 35 фильмах
+                </li>
+                <li class="m-inf-el">
+                    основные жанры фильмов:
+                    <ul class="second-list-inf-f">
+                        <li>биография</li>
+                        <li>трагикомедия</li>
+                        <li>приключение</li>
+                        <li>мелодрама</li>
+                        <li>триллер</li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+        <div class="main-inf-div main-inf-div-2">
+            <div class="m-inf-img">
+                <img src="images/leo-deCapr.jpeg" alt="Фотография Леонардо ДиКаприо">
+            </div>
+        </div>
+    </div>
+    <h2 class="h2-info-films">Фильмы с Леонардо ДиКаприо</h2>
+    <div class="row-films">
+        <div class="cards-wrap">
+            <div class="card">
+                <img class="card-img-top" src="https://avatars.mds.yandex.net/get-kinopoisk-image/1946459/390dc48d-2025-4323-b225-cb0883ab8374/300x450" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Великий Гэтсби</h5>
+                    <p class="card-text">Невероятная история жизни и искренней любви таинственного и великого Гэтсби</p>
+                    <a href="https://www.kinopoisk.ru/film/463724/" class="btn btn-primary" target="_blank">Смотреть на Кинопоиске</a>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-img-top" src="https://avatars.mds.yandex.net/get-kinopoisk-image/1946459/5c758ac0-7a5c-4f00-a94f-1be680a312fb/300x450" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Волк с Уолл-стрит</h5>
+                    <p class="card-text">Реальная биография брокера с Уолл-стрит и его финансовых махинаций на биржах</p>
+                    <a href="https://www.kinopoisk.ru/film/462682/" class="btn btn-primary" target="_blank">Смотреть на Кинопоиске</a>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-img-top" src="https://avatars.mds.yandex.net/get-kinopoisk-image/1629390/8ab9a119-dd74-44f0-baec-0629797483d7/300x450" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Начало</h5>
+                    <p class="card-text">Группа воров проникает в сны, чтобы украсть идеи и внедрить новую мысль</p>
+                    <a href="https://www.kinopoisk.ru/film/447301/" class="btn btn-primary" target="_blank">Смотреть на Кинопоиске</a>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-img-top" src="https://avatars.mds.yandex.net/get-kinopoisk-image/4774061/9c7a6c39-a9fc-4c15-a634-ada778f7b86c/300x450" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Не смотрите наверх</h5>
+                    <p class="card-text">Астрономы обнаруживают комету, угрожаюющую Земле, но мир не желает их слушать</p>
+                    <a href="https://www.kinopoisk.ru/film/1338480/" class="btn btn-primary" target="_blank">Смотреть на Кинопоиске</a>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-img-top" src="https://avatars.mds.yandex.net/get-kinopoisk-image/10592371/7f0e6761-4635-46ad-b804-59d5cf1ae85c/300x450" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Титаник</h5>
+                    <p class="card-text">Знаменитейшая история о жертвенности, отваге и любви с первого взгляда свозь сословия</p>
+                    <a href="https://www.kinopoisk.ru/film/2213/" class="btn btn-primary" target="_blank">Смотреть на Кинопоиске</a>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-img-top" src="https://avatars.mds.yandex.net/get-kinopoisk-image/4303601/617303b7-cfa7-4273-bd1d-63974bf68927/300x450" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Остров проклятых</h5>
+                    <p class="card-text">Параноидальный триллер про расследование побега пациентки из мрачной психбольницы</p>
+                    <a href="https://www.kinopoisk.ru/film/397667/" class="btn btn-primary" target="_blank">Смотреть на Кинопоиске</a>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-img-top" src="https://avatars.mds.yandex.net/get-kinopoisk-image/1599028/70580cf5-3287-42d6-8a76-2c715e2f6172/300x450" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Однажды в… Голливуде</h5>
+                    <p class="card-text">Известный актёр и его дублер пытаются найти свое место после конца золотого века Голливуда</p>
+                    <a href="https://www.kinopoisk.ru/film/1047883/" class="btn btn-primary" target="_blank">Смотреть на Кинопоиске</a>
+                </div>
+            </div>
+            <div class="card">
+                <img class="card-img-top" src="https://avatars.mds.yandex.net/get-kinopoisk-image/1704946/e38dd6f9-610e-4c90-8540-dc48560cb9cc/300x450" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Поймай меня, если сможешь</h5>
+                    <p class="card-text">Молодой мошенник обманывает мир, пока его не преследует упрямый агент ФБР</p>
+                    <a href="https://www.kinopoisk.ru/film/324/" class="btn btn-primary" target="_blank">Смотреть на Кинопоиске</a>
+                </div>
+            </div>
+        </div>            
+    </div>
+    <h2 class="h2-info-films">Фильмы с наградами</h2>
+    <div class="row-films">
+        <div class="container text-center">
+            <div class="row row-cols-3">
+                <div class="col-sm-6 col-border">Победа в номинации</div>
+                <div class="col-sm-6 col-border">Номинации</div>
+            </div>
+            <div class="row row-cols-3">
+                <div class="col-sm-3 col-border">Оскар</div>
+                <div class="col-sm-3 col-border">Золотой глобус</div>
+                <div class="col-sm-3 col-border">Оскар</div>
+                <div class="col-sm-3 col-border">Золотой глобус</div>
+            </div>
+            <div class="row row-cols-3">
+                <div class="col-sm-3 col-border">
+                    <ul class="row-table-films-list">
+                        <li class="r-tbl-fi-li-el">Выживший</li>
+                    </ul>
+                </div>
+                <div class="col-sm-3 col-border">
+                    <ul class="row-table-films-list">
+                        <li class="r-tbl-fi-li-el">Выживший</li>
+                        <li class="r-tbl-fi-li-el">Волк с Уолл-стрит</li>
+                        <li class="r-tbl-fi-li-el">Авиатор</li>
+                    </ul>
+                </div>
+                <div class="col-sm-3 col-border">
+                    <ul class="row-table-films-list">
+                        <li class="r-tbl-fi-li-el">Оскар</li>
+                        <li class="r-tbl-fi-li-el">Однажды в… Голливуде</li>
+                        <li class="r-tbl-fi-li-el">Волк с Уолл-стрит</li>
+                        <li class="r-tbl-fi-li-el">Кровавый алмаз</li>
+                        <li class="r-tbl-fi-li-el">Авиатор</li>
+                        <li class="r-tbl-fi-li-el">Что гложет Гильберта Грейпа</li>
+                    </ul>
+                </div>
+                <div class="col-sm-3 col-border">
+                    <ul class="row-table-films-list">
+                        <li class="r-tbl-fi-li-el">Убийцы цветочной луны</li>
+                        <li class="r-tbl-fi-li-el">Не смотрите наверх</li>
+                        <li class="r-tbl-fi-li-el">Однажды в… Голливуде</li>
+                        <li class="r-tbl-fi-li-el">Джанго освобожденный</li>
+                        <li class="r-tbl-fi-li-el">Дж. Эдгард</li>
+                        <li class="r-tbl-fi-li-el">Дорога перемен</li>
+                        <li class="r-tbl-fi-li-el">Отступники</li>
+                        <li class="r-tbl-fi-li-el">Поймай меня, если сможешь</li>
+                        <li class="r-tbl-fi-li-el">Титаник</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <h2 class="h2-info-films">Фильмография</h2>
+    <div class="row-films">
+        <table class="table">
+            <thead>
+                <tr class="table-line">
+                    <th scope="col">Год</th>
+                    <th scope="col">Название на русском</th>
+                    <th scope="col">Название в оригинале</th>
+                    <th scope="col">Роль</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="table-line">
+                    <th scope="col">2023</th>
+                    <th scope="col">Убийцы цветочной луны</th>
+                    <th scope="col">Killers of the Flower Moon</th>
+                    <th scope="col">Эрнест Бёркхарт</th>
+                </tr>
+                <tr class="table-line">
+                    <th scope="col">2021</th>
+                    <th scope="col">Эннио. Маэстро.</th>
+                    <th scope="col">Ennio</th>
+                    <th scope="col">играет самого себя</th>
+                </tr>
+                <tr class="table-line">
+                    <th scope="col">2021</th>
+                    <th scope="col">Не смотрите наверх</th>
+                    <th scope="col">Don’t Look Up</th>
+                    <th scope="col">доктор Рэндалл Минди</th>
+                </tr>
+                <tr class="table-line">
+                    <th scope="col">2019</th>
+                    <th scope="col">Однажды в Голливуде</th>
+                    <th scope="col">Once Upon a Time in Hollywood</th>
+                    <th scope="col">Рик Далтон</th>
+                </tr>
+                <tr class="table-line">
+                    <th scope="col">2019</th>
+                    <th scope="col">Лёд в огне</th>
+                    <th scope="col">Ice on Fire</th>
+                    <th scope="col">рассказчик (закадровый голос)</th>
+                </tr>
+                <tr class="table-line">
+                    <th scope="col">2016</th>
+                    <th scope="col">До потопа</th>
+                    <th scope="col">Before the Flood</th>
+                    <th scope="col">играет самого себя</th>
+                </tr>
+                <tr class="table-line">
+                    <th scope="col">2015</th>
+                    <th scope="col">Выживший</th>
+                    <th scope="col">The Revenant</th>
+                    <th scope="col">Хью Гласс</th>
+                </tr>
+                <tr class="table-line">
+                    <th scope="col">2015</th>
+                    <th scope="col">Пробы</th>
+                    <th scope="col">The Audition</th>
+                    <th scope="col">играет самого себя</th>
+                </tr>
+                <tr class="table-line">
+                    <th scope="col">2013</th>
+                    <th scope="col">Великий Гэтсби</th>
+                    <th scope="col">The Great Gatsby</th>
+                    <th scope="col">Джей Гэтсби</th>
+                </tr>
+                <tr class="table-line">
+                    <th scope="col">2013</th>
+                    <th scope="col">Волк с Уолл-стрит</th>
+                    <th scope="col">The Wolf of Wall Street</th>
+                    <th scope="col">Джордан Белфорт, брокер</th>
+                </tr>
+                <tr class="table-line">
+                    <th scope="col">2012</th>
+                    <th scope="col">Джанго освобождённый</th>
+                    <th scope="col">Django Unchained</th>
+                    <th scope="col">Кэлвин Кэнди</th>
+                </tr>
+                <tr class="table-line">
+                    <th scope="col">2011</th>
+                    <th scope="col">Любовь, которую мы несём</th>
+                    <th scope="col">The Love We Make</th>
+                    <th scope="col">играет самого себя</th>
+                </tr>
+                <tr class="table-line">
+                    <th scope="col">2011</th>
+                    <th scope="col">Дж. Эдгар</th>
+                    <th scope="col">J. Edgar</th>
+                    <th scope="col">Джон Эдгар Гувер</th>
+                </tr>
+                <tr class="table-line">
+                    <th scope="col">2010</th>
+                    <th scope="col">Хаббл IMAX 3D</th>
+                    <th scope="col">Hubble</th>
+                    <th scope="col">рассказчик (закадровый голос)</th>
+                </tr>
+                <tr class="table-line">
+                    <th scope="col">2010</th>
+                    <th scope="col">Начало</th>
+                    <th scope="col">Inception</th>
+                    <th scope="col">Доминик Кобб, Извлекатель</th>
+                </tr>
+                <tr class="table-line">
+                    <th scope="col">2009</th>
+                    <th scope="col">Остров проклятых</th>
+                    <th scope="col">Shutter Island</th>
+                    <th scope="col">Тедди Дэниелс / Эндрю Леддис</th>
+                </tr>
+                <tr class="table-line">
+                    <th scope="col">2008</th>
+                    <th scope="col">Совокупность лжи</th>
+                    <th scope="col">Body of Lies</th>
+                    <th scope="col">Роджер Феррис</th>
+                </tr>
+                <tr class="table-line">
+                    <th scope="col">2008</th>
+                    <th scope="col">Дорога перемен</th>
+                    <th scope="col">Revolutionary Road</th>
+                    <th scope="col">Фрэнк Уилер</th>
+                </tr>
+                <tr class="table-line">
+                    <th scope="col">2007</th>
+                    <th scope="col">Одиннадцатый час</th>
+                    <th scope="col">The 11th Hour</th>
+                    <th scope="col">играет самого себя / Narrator</th>
+                </tr>
+                <tr class="table-line">
+                    <th scope="col">2006</th>
+                    <th scope="col">Отступники</th>
+                    <th scope="col">The Departed</th>
+                    <th scope="col">Билли Костиган</th>
+                </tr>
+                <tr class="table-line">
+                    <th scope="col">2006</th>
+                    <th scope="col">Кровавый алмаз</th>
+                    <th scope="col">Blood Diamond</th>
+                    <th scope="col">Дэнни Арчер</th>
+                </tr>
+                <tr class="table-line">
+                    <th scope="col">2004</th>
+                    <th scope="col">Авиатор</th>
+                    <th scope="col">The Aviator</th>
+                    <th scope="col">Говард Хьюз</th>
+                </tr>
+                <tr class="table-line">
+                    <th scope="col">2002</th>
+                    <th scope="col">Поймай меня, если сможешь</th>
+                    <th scope="col">Catch Me If You Can</th>
+                    <th scope="col">Фрэнк Уильям Абигнейл-младший</th>
+                </tr>
+                <tr class="table-line">
+                    <th scope="col">2002</th>
+                    <th scope="col">Банды Нью-Йорка</th>
+                    <th scope="col">Gangs of New York</th>
+                    <th scope="col">Амстердам Валлон</th>
+                </tr>
+                <tr class="table-line">
+                    <th scope="col">2000</th>
+                    <th scope="col">Пляж</th>
+                    <th scope="col">The Beach</th>
+                    <th scope="col">Ричард</th>
+                </tr>
+                <tr class="table-line">
+                    <th scope="col">2000</th>
+                    <th scope="col">Кафе «Донс Плам»</th>
+                    <th scope="col">Don's Plum</th>
+                    <th scope="col">Дерек</th>
+                </tr>
+                <tr class="table-line">
+                    <th scope="col">1998</th>
+                    <th scope="col">Человек в железной маске</th>
+                    <th scope="col">The Man in the Iron Mask</th>
+                    <th scope="col">Филипп / Людовик XIV</th>
+                </tr>
+                <tr class="table-line">
+                    <th scope="col">1998</th>
+                    <th scope="col">Знаменитость</th>
+                    <th scope="col">Celebrity</th>
+                    <th scope="col">Брэндон Дэрроу</th>
+                </tr>
+                <tr class="table-line">
+                    <th scope="col">1997</th>
+                    <th scope="col">Титаник</th>
+                    <th scope="col">Titanic</th>
+                    <th scope="col">Джек Доусон</th>
+                </tr>
+                <tr class="table-line">
+                    <th scope="col">1996</th>
+                    <th scope="col">Ромео + Джульетта</th>
+                    <th scope="col">Romeo + Juliet</th>
+                    <th scope="col">Ромео Монтекки</th>
+                </tr>
+                <tr class="table-line">
+                    <th scope="col">1996</th>
+                    <th scope="col">Комната Марвина</th>
+                    <th scope="col">Marvin's Room</th>
+                    <th scope="col">Хэнк, сын Ли</th>
+                </tr>
+                <tr class="table-line">
+                    <th scope="col">1995</th>
+                    <th scope="col">Дневники баскетболиста</th>
+                    <th scope="col">The Basketball Diaries</th>
+                    <th scope="col">Джим Кэрролл</th>
+                </tr>
+                <tr class="table-line">
+                    <th scope="col">1995</th>
+                    <th scope="col">Быстрый и мёртвый</th>
+                    <th scope="col">The Quick and the Dead</th>
+                    <th scope="col">Фи «Малыш» Ирод</th>
+                </tr>
+                <tr class="table-line">
+                    <th scope="col">1995</th>
+                    <th scope="col">Полное затмение</th>
+                    <th scope="col">Total Eclipse</th>
+                    <th scope="col">Артюр Рембо</th>
+                </tr>
+                <tr class="table-line">
+                    <th scope="col">1994</th>
+                    <th scope="col">Вечеринка с выстрелами по ногам</th>
+                    <th scope="col">The Foot Shooting Party</th>
+                    <th scope="col">Буд</th>
+                </tr>
+                <tr class="table-line">
+                    <th scope="col">1993</th>
+                    <th scope="col">Жизнь этого парня</th>
+                    <th scope="col">This Boy's Life</th>
+                    <th scope="col">Тобиас «Тоби» Вольффа</th>
+                </tr>
+                <tr class="table-line">
+                    <th scope="col">1993</th>
+                    <th scope="col">Что гложет Гилберта Грейпа</th>
+                    <th scope="col">What's Eating Gilbert Grape</th>
+                    <th scope="col">Арнольд «Арни» Грейп</th>
+                </tr>
+                <tr class="table-line">
+                    <th scope="col">1992</th>
+                    <th scope="col">Ядовитый плющ</th>
+                    <th scope="col">Poison Ivy</th>
+                    <th scope="col">Гай</th>
+                </tr>
+                <tr class="table-line">
+                    <th scope="col">1991</th>
+                    <th scope="col">Зубастики 3</th>
+                    <th scope="col">The Critters 3</th>
+                    <th scope="col">Джош</th>
+                </tr>
+            </tbody>
+        </table>
     </div>
 </body>
 </html>
